@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HomeSeer Backup : sauvegardes personnelles d'une installation HomeSeer vers Google Drive avec rclone.">
+  <meta name="color-scheme" content="light dark">
+  <title>HomeSeer Backup — Sauvegardes personnelles</title>
+  <style>
+    :root{color-scheme:light dark;--bg:#f4f7fb;--card:#fff;--ink:#172b45;--muted:#4c6079;--line:#d8e2ee;--accent:#1659a8}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}
+    main,footer{max-width:850px;margin:auto;padding:32px 24px}header{padding:30px 0 18px}.eyebrow{color:var(--accent);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:750}
+    h1{font-size:clamp(2.2rem,6vw,3.5rem);letter-spacing:-.04em;line-height:1.1;margin:14px 0 20px}h2{font-size:1.2rem;line-height:1.35;margin:0 0 12px}p{margin:0 0 16px}.lead{font-size:1.2rem;color:var(--muted)}
+    section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;margin:20px 0}li{margin:8px 0}ul{padding-left:24px}a{color:var(--accent);text-underline-offset:4px}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+    .button{display:inline-block;background:var(--accent);color:#fff;padding:11px 18px;border-radius:9px;text-decoration:none;font-weight:650}footer{border-top:1px solid var(--line);font-size:.9rem;color:var(--muted);padding-top:24px}footer p{margin:0 0 10px}
+    @media(prefers-color-scheme:dark){:root{--bg:#101a29;--card:#17253a;--ink:#edf3fb;--muted:#b8c9de;--line:#354963;--accent:#8bc1ff}.button{color:#101a29}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">Usage personnel · Google Drive · rclone</p>
+    <h1>HomeSeer Backup</h1>
+    <p class="lead">Un projet personnel pour sauvegarder les fichiers d'une installation HomeSeer dans le compte Google Drive de son propriétaire, à l'aide de rclone.</p>
+  </header>
+  <section aria-labelledby="purpose">
+    <h2 id="purpose">À quoi sert ce projet ?</h2>
+    <p>HomeSeer Backup est le nom du projet d'autorisation Google utilisé pour ce flux de sauvegarde personnel. Le logiciel rclone s'exécute sur une machine contrôlée par le propriétaire et transfère les fichiers de sauvegarde sélectionnés vers son Google Drive.</p>
+    <p>L'accès peut aussi servir à lister ou vérifier les sauvegardes, à les récupérer pour une restauration et à supprimer celles que le propriétaire choisit de retirer, selon les commandes et les règles de conservation qu'il configure.</p>
+    <p>Ce projet n'est pas un service commercial et ne propose ni inscription publique ni traitement de sauvegardes pour des tiers.</p>
+  </section>
+  <section aria-labelledby="access">
+    <h2 id="access">Pourquoi une autorisation Google ?</h2>
+    <p>L'autorisation OAuth permet à rclone d'utiliser l'API Google Drive pour effectuer ces opérations dans le compte autorisé. Les droits effectifs sont ceux accordés dans l'écran de consentement Google et configurés dans rclone ; selon la portée choisie, ils peuvent être plus larges que le seul dossier de sauvegarde.</p>
+    <p>Ce site est uniquement informatif. Il ne lance aucune connexion Google, ne reçoit aucune sauvegarde et ne recueille aucun mot de passe ni jeton OAuth.</p>
+    <a class="button" href="privacy.html">Politique de confidentialité</a>
+  </section>
+  <section aria-labelledby="owner">
+    <h2 id="owner">Responsable du projet</h2>
+    <p>Projet personnel maintenu par <a href="https://github.com/MattL0">MattL0 sur GitHub</a>. Pour une question sur cette documentation, utilisez les <a href="https://github.com/MattL0/homeseer-backup/issues">questions du dépôt public</a>, sans y joindre de fichiers de sauvegarde ni d'identifiants.</p>
+    <p>HomeSeer Backup est un projet indépendant. Il n'est ni édité ni approuvé par HomeSeer, Google ou le projet rclone.</p>
+  </section>
+</main>
+<footer>
+  <p><a href="privacy.html">Confidentialité</a> · <a href="https://github.com/MattL0/homeseer-backup">Code de ce site</a></p>
+  <p>Documentation mise à jour le 8 octobre 2026.</p>
+</footer>
+</body>
+</html>
