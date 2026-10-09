@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Traitement des données et confidentialité du projet personnel HomeSeer Backup utilisant rclone et Google Drive.">
+  <meta name="color-scheme" content="light dark">
+  <title>Confidentialité — HomeSeer Backup</title>
+  <style>
+    :root{color-scheme:light dark;--bg:#f4f7fb;--card:#fff;--ink:#172b45;--muted:#4c6079;--line:#d8e2ee;--accent:#1659a8}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}
+    main,footer{max-width:850px;margin:auto;padding:32px 24px}header{padding:24px 0 10px}h1{font-size:clamp(2rem,5vw,3rem);letter-spacing:-.035em;line-height:1.15;margin:16px 0}h2{font-size:1.2rem;line-height:1.35;margin:0 0 12px}p{margin:0 0 16px}
+    .meta{color:var(--muted)}section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;margin:20px 0}li{margin:8px 0}ul{padding-left:24px}a{color:var(--accent);text-underline-offset:4px}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+    footer{border-top:1px solid var(--line);font-size:.9rem;color:var(--muted);padding-top:24px}footer p{margin:0 0 10px}
+    @media(prefers-color-scheme:dark){:root{--bg:#101a29;--card:#17253a;--ink:#edf3fb;--muted:#b8c9de;--line:#354963;--accent:#8bc1ff}}
+  </style>
+</head>
+<body>
+<main>
+  <nav aria-label="Navigation principale"><a href="index.html">← HomeSeer Backup</a></nav>
+  <header>
+    <h1>Politique de confidentialité</h1>
+    <p class="meta">HomeSeer Backup · Mise à jour le 8 octobre 2026</p>
+  </header>
+  <section>
+    <h2>1. Responsable et usage personnel</h2>
+    <p>HomeSeer Backup est un projet personnel maintenu par <a href="https://github.com/MattL0">MattL0</a>. Il utilise rclone pour sauvegarder des fichiers d'une installation HomeSeer dans le compte Google Drive du propriétaire. Il ne propose pas de service de sauvegarde au public.</p>
+  </section>
+  <section>
+    <h2>2. Données traitées et finalités</h2>
+    <p>rclone traite le contenu des fichiers sélectionnés ainsi que les métadonnées utiles aux opérations de sauvegarde : noms, chemins, identifiants de fichiers ou dossiers, tailles, dates et, lorsqu'elles sont disponibles, sommes de contrôle.</p>
+    <p>Ces données servent uniquement au transfert, à la vérification, à la récupération et à la gestion des sauvegardes personnelles, y compris leur suppression lorsque le propriétaire la configure ou la demande. Le contenu des archives dépend des fichiers que le propriétaire choisit de sauvegarder.</p>
+    <p>Les autorisations OAuth sont accordées à rclone via le projet HomeSeer Backup. Leur étendue dépend de la portée configurée et du consentement donné à Google ; une autorisation Drive étendue peut permettre l'accès à d'autres fichiers que les sauvegardes. Le dossier de destination choisi ne réduit pas, à lui seul, la portée OAuth accordée.</p>
+  </section>
+  <section>
+    <h2>3. Stockage et accès</h2>
+    <p>Les sauvegardes sont transférées entre la machine qui exécute rclone et Google Drive. Les copies locales restent sur les appareils choisis par le propriétaire ; les copies distantes sont conservées dans son compte Google Drive.</p>
+    <p>rclone conserve les informations d'autorisation nécessaires, dont les jetons OAuth, dans sa configuration sur la machine qui l'exécute. Selon la configuration, des journaux locaux peuvent contenir des noms de fichiers et des résultats de transfert. Ces informations et les sauvegardes ne font pas partie de ce site public.</p>
+    <p>La protection de la machine, de la configuration rclone et du compte Google relève du propriétaire. Cette page ne présume pas qu'un chiffrement supplémentaire des archives est activé.</p>
+  </section>
+  <section>
+    <h2>4. Partage et utilisations exclues</h2>
+    <p>Le projet n'utilise pas les données Google Drive pour la publicité, leur vente, le profilage ou l'entraînement de modèles d'intelligence artificielle. Il ne les transmet pas volontairement à des tiers pour ces usages.</p>
+    <p>Google fournit l'authentification et le stockage Drive, selon sa <a href="https://policies.google.com/privacy">politique de confidentialité</a>. Le projet n'ajoute aucun partage public des sauvegardes ; les droits de partage du compte et des dossiers Drive restent sous le contrôle du propriétaire.</p>
+  </section>
+  <section>
+    <h2>5. Conservation, suppression et révocation</h2>
+    <p>Il n'existe pas de durée de conservation universelle imposée par ce site. Les sauvegardes et les journaux restent conservés suivant les règles et suppressions décidées par le propriétaire. Les copies locales, les copies Drive et les éléments dans la corbeille doivent être gérés séparément.</p>
+    <p>L'accès futur peut être révoqué depuis les <a href="https://myaccount.google.com/connections">connexions du compte Google</a> en retirant l'autorisation de HomeSeer Backup. Les tâches de sauvegarde peuvent également être arrêtées et la configuration d'accès retirée de rclone. La révocation ne supprime pas les fichiers déjà sauvegardés.</p>
+  </section>
+  <section>
+    <h2>6. Ce site public</h2>
+    <p>Les pages de ce site sont statiques : aucun formulaire, script d'analyse, publicité, cookie applicatif ou connexion à Google Drive n'y est intégré. Elles ne reçoivent ni fichiers HomeSeer, ni mots de passe, ni jetons OAuth.</p>
+    <p>Le site est hébergé par GitHub Pages. L'hébergeur peut traiter des données techniques liées aux visites, notamment l'adresse IP et les informations de requête, selon la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">politique de confidentialité de GitHub</a>.</p>
+  </section>
+  <section>
+    <h2>7. Questions et mises à jour</h2>
+    <p>Pour une question sur cette politique, utilisez les <a href="https://github.com/MattL0/homeseer-backup/issues">questions du dépôt GitHub de HomeSeer Backup</a>. Cet espace est public : n'y publiez aucun identifiant, jeton, journal sensible ou fichier de sauvegarde.</p>
+    <p>Cette politique sera adaptée si le fonctionnement du projet change. La date de mise à jour figure en haut de la page.</p>
+  </section>
+</main>
+<footer><p><a href="index.html">Accueil HomeSeer Backup</a> · <a href="https://github.com/MattL0/homeseer-backup">Code de ce site</a></p></footer>
+</body>
+</html>
